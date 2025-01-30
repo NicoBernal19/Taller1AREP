@@ -1,20 +1,120 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
-}
-
-h1 {
+    background-color: #f4f4f9;
     color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
-button {
+/* Encabezado */
+header {
+    width: 100%;
+    background: linear-gradient(135deg, #0073e6, #005bb5);
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Botones */
+.button {
+    display: inline-block;
+    background: #0073e6;
+    color: white;
     padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    text-align: center;
 }
 
+.button:hover {
+    background: #005bb5;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Estilos para mensajes */
+.message {
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.success {
+    background: #4CAF50;
+    color: white;
+}
+
+.error {
+    background: #E74C3C;
+    color: white;
+}
+
+/* Pie de página */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    background: #222;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Estilos para imágenes */
 img {
-    width: 500px;
-    margin: 20px 0;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 35px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover en imágenes */
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }

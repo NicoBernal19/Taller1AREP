@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,20 +10,30 @@
 <header>
     <h1>¡Puedes Probar la API!</h1>
 </header>
+
 <nav>
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="testAPI.html">API Test</a></li>
     </ul>
 </nav>
+
 <main>
-    <form id="apiForm">
+    <form id="getForm">
         <label for="name">Enter your name:</label>
         <input type="text" id="name" name="name" required>
-        <button type="submit">Send</button>
+        <button type="submit">GET</button>
     </form>
     <div id="response"></div>
-    <img src="images/logo.png" alt="Example Image" width="100">
+
+    <img src="images/logo.png" alt="Example Image" width="200">
+
+    <form id="postForm">
+        <label for="postname">Enter your name:</label>
+        <input type="text" id="postname" name="postname" required>
+        <button type="submit">POST</button>
+    </form>
+    <div id="postResponse"></div>
 </main>
 <script src="script.js"></script>
 </body>
