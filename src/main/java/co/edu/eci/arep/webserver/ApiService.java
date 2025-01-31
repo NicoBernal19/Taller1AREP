@@ -66,7 +66,7 @@ public class ApiService {
         }
     }
 
-    private static Map<String, String> parsePostData(String body) throws Exception {
+    static Map<String, String> parsePostData(String body) throws Exception {
         Map<String, String> data = new HashMap<>();
         String[] pairs = body.split("&");
         for (String pair : pairs) {
