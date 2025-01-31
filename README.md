@@ -44,6 +44,15 @@ mvn exec:java -Dexec.mainClass="co.edu.eci.arep.HttpServer"
 
 El servidor esta hecho para que inicie en el puerto `35000`, una vez ejecutado, ya esta listo para que puedas usarlo y probarlo.
 
+## Diseño del sistema
+
+El código está estructurado en diferentes archivos para no tener una sola clase llena de codigo, ademas de que es una buena practica y permite que todo este mas ordenado y compacto, hace que sea mas facil extender a posterior el codigo.
+
+Entre las funcionalidades que se ofrecen encontramos las siguientes:
+
+- Soporta los métodos `GET` y `POST`.
+- Permite servir HTML, CSS, JS e imágenes.
+
 ## Pruebas
 
 ### Pruebas Unitarias
@@ -61,6 +70,9 @@ Puedes probar el servidor abriendo un navegador y accediendo a:
 ```
 http://localhost:35000
 ```
+
+Una vez abierto el servidor web puedes navegar entre la pagina de inicio (index.html) o la pagina en donde podras probar los metodos `GET` y `POST` (testREST.html).
+
 ### Pruebas archivos estáticos
 
 Prueba a acceder a los siguientes archivos:
@@ -71,15 +83,6 @@ http://localhost:35000/script.js
 http://localhost:35000/styles.css
 http://localhost:35000/images/logo.png
 ```
-
-## Diseño del sistema
-
-El código está estructurado en diferentes archivos para no tener una sola clase llena de codigo, ademas de que es una buena practica y permite que todo este mas ordenado y compacto, hace que sea mas facil extender a posterior el codigo.
-
-Entre las funcionalidades que se ofrecen encontramos las siguientes:
-
-- Soporta los métodos `GET` y `POST`.
-- Permite servir HTML, CSS, JS e imágenes.
 
 ## Construido con
 
